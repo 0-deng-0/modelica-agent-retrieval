@@ -1,0 +1,23 @@
+本项目是对modelica官方库组件建库，用于后续提供检索工具给智能体，下面说明Modelica库的json文件的结构：
+
+path：全名，全库唯一，可以作为查表键
+name: 短名，全名的最后一段
+kind：前缀（partial / expandable / encapsulated / replaceable / redeclare / final）+ 
+    基础类型（ block / model / function / record / type / connector / package / class）+
+    constrainedBy 限制的基类 拼接成字符串，空格分隔
+description：简要描述
+information：详细描述，对应annotation里面的documentation
+extends：继承的基类
+interface：组件声明列表，包括 parameter 和 connector,input,output，用 kind 区别；
+    每一个组件有 kind、type、name、default、unit、description。
+    包含类通过 extends 继承的成员。
+subClasses：类的嵌套子类
+model：全文
+
+
+清理规则：
+1. model全文不要annotation和子类的文本
+2. interface 包含parameter, connector, 普通input和普通output，但是不要 protected 的 parameter, connector
+3. 类的嵌套子类的获取，包含了package以及以外的类的子类，没有剔除protected子类
+
+ 

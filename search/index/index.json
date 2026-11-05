@@ -1,0 +1,18 @@
+{
+  "modelica-4.0.0": {
+    "format": "msl",
+    "source_basename": "modelica-4.0.0-one-line.json",
+    "source_json": "modelica-json/modelica-4.0.0-one-line.json",
+    "index_file": "search/index/modelica-4.0.0.pkl",
+    "description": "Modelica Standard Library 4.0.0",
+    "updated_at_utc": "2026-11-04T06:36:34.870466+00:00"
+  },
+  "spec3.6": {
+    "format": "spec",
+    "source_basename": "spec3.6.json",
+    "source_json": "modelica-json/spec3.6.json",
+    "index_file": "search/index/spec3.6.pkl",
+    "description": "Modelica Language Specification 3.6",
+    "updated_at_utc": "2026-10-28T07:32:10.955469+00:00"
+  }
+}
